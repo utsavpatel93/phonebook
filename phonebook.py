@@ -9,13 +9,14 @@ call_contact()
 #adding a contact in the phonebook
 name1, number1 = input('Provide the name and number ').split()
 np.update({name1:number1})
-call_contact()
+print ("The contact is added in contact")
 
 #removing a contact from phonebook
 del_name = input ('Provide the name to delete from contact ')
-for key in np.items():
+for key,value in np.items():
     if (del_name == key):
         del np[key]
+        print("The contact has been deleted")
     else:
         print ("Contact does not exist")
-call_contact()
+
