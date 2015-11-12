@@ -13,20 +13,20 @@ print ("Add contacts first!")
 add_contact()
 
 def call_contact():
-    for name, numbers in d1.items():
-        print("The number of {} contact is {}\n".format(name,numbers))
+    for name, number in d1.items():
+        print("The number of {} contact is {}\n".format(name,number))
 
-y = input ("Do you want to see the contacts that you have added? ")
+y = input ('Do you want to see the contacts that you have added? ')
 if y == 'yes':
     call_contact()
 else:
-    print ("Thik hai")
+    print ("ok")
 
 def del_contacts():
-    for name, numbers in d1.items():
+    for name, number in d1.copy().items():
         if (del_name == name):
             del d1[name]
-        print("Deleted")
+            print ("Contact deleted!")
     else:
         print ("Contact does not exist")
 
@@ -36,14 +36,4 @@ if z == 'yes':
     del_name = input ("Type the name of the contact you wish to delete")
     del_contacts()
 else:
-    print ("ok!")
-
-
-
-
-
-
-##adding a contact in the phonebook
-##name1, number1 = input('Provide the name and number ').split()
-##np.update({name1:number1})
-##print ("The contact is added in contact") ####
+    print ("ok")
