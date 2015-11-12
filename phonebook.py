@@ -30,7 +30,7 @@ def del_contacts():
     else:
         print ("Contact does not exist")
 
-z = input ("Do you wish to delete any of the number you deleted? ")
+z = input ("Do you wish to delete any of the number you added? ")
 
 if z == 'yes':
     del_name = input ("Type the name of the contact you wish to delete")
