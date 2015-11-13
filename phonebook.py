@@ -1,12 +1,11 @@
 def add_contact():
-    name = input ("Enter name: ")
-    number = input ("Enter number ")
-    d1[name] = number
-    x = input ("Do you want to add some more? Write 'no' to exit")
-    if x == "no":
-        return
-    else:
-        add_contact()
+    while True:
+        name = input ("Enter name: ")
+        number = input ("Enter number ")
+        d1[name] = number
+        x = input ("Do you want to add some more? ")
+        if x == "no":
+            break
 
 d1={}
 print ("Add contacts first!")
