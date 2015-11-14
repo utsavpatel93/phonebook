@@ -39,14 +39,11 @@ else:
     print ("ok")
     
 #--------------storing in file------------------
-contacts = 'd1.data'
-f = open(contacts,'wb')
+contacts = d1
+f = open('contacts.txt','wb')
 pickle.dump(contacts,f)
 f.close()
-
-del contacts
-
-f = open(contacts,'rb')
+f = open('contacts.txt','rb')
 storedlist = pickle.load(f)
 
 print (storedlist)
