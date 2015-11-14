@@ -1,3 +1,4 @@
+import pickle
 def add_contact():
     while True:
         name = input ("Enter name: ")
