@@ -36,3 +36,16 @@ if z == 'yes':
     del_contacts()
 else:
     print ("ok")
+    
+#--------------storing in file------------------
+contacts = 'd1.data'
+f = open(contacts,'wb')
+pickle.dump(contacts,f)
+f.close()
+
+del contacts
+
+f = open(contacts,'rb')
+storedlist = pickle.load(f)
+
+print (storedlist)
